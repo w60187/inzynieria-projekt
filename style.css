@@ -1,0 +1,219 @@
+html {
+	
+	/*color: #000; */
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	
+}
+
+body {
+	background-image: url("tlo.jpg");
+}
+
+
+#top {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+
+
+#NAGLOWEK {
+	/*background-color: #F70808;*/
+		background-image: url("tlo_naglowka.jpg");
+		background-size: cover;
+
+}
+#menu, #menu ul, #menu ol {
+        list-style-type:none;
+        padding:0;
+        margin:0;
+      }
+
+      /* wygląd głównego elementu - ol */
+      #menu {
+        background-color:#FFF;
+        font-size:18px;
+        height:2em;
+        line-height:2em;
+        text-align:center;
+      }
+
+      /* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+      #menu a {
+        display:block;
+        text-decoration:none;
+        color:#000;
+        
+      }
+
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol */
+      #menu > li {
+        float:left;
+        width:19.9%;
+        margin-left:1px;
+        background-color:#FDD700;
+        height:2em;
+      }
+
+      /* wygląd elementu - li - pierwszego dziecka elementu - ol */
+      #menu > li:first-child {
+        margin-left:0;
+      }
+
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
+      #menu > li:hover {
+        background-color:#EEE;
+      }
+
+      /* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      #menu > li:hover > a {
+		  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-variant: small-caps;
+
+        color:#09C;
+      }
+
+      /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      #menu > li:hover > ul {
+        display:block;
+      }
+
+      /* ------------------------CZĘŚĆ-ROZWIJANA-MENU-POZIOM-1----------------------- */
+
+      /* wygląd głównych rozwijanych elementów - ul */
+      #menu > li > ul {
+        display:none;
+      }
+
+      /* wygląd elementu - li - w części rozwijanej */
+      #menu > li > ul > li {
+		  
+        position:relative;
+        background-color:#EEE;
+      }
+
+      /* wygląd elementu - a - w części rozwijanej */
+      #menu > li > ul > li > a {
+		  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-variant: small-caps;
+
+        border-top:1px solid #FFF;
+      }
+
+      /* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+      #menu > li > ul > li:hover {
+        background-color:#DDD;
+      }
+
+      /* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+      #menu > li > ul > li:hover > a {
+		  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-variant: small-caps;
+
+        color:#09C;
+      }
+
+      /* ------------------------CZĘŚĆ-ROZWIJANA-MENU-POZIOM-2----------------------- */
+
+      /* wygląd głównego elementu - ol - w drugiej części rozwijanej */
+      #menu > li > ul > li > ol {
+        display:none;
+        width:150%;
+        position:absolute;
+        left:100%;
+        margin-top:-2em;
+      }
+
+      /* wygląd głównego elementu - ol - w drugiej części rozwijanej, po najechaniu kursorem myszki na jego rodzica - li */
+      #menu > li > ul > li:hover > ol {
+        display:block;
+      }
+
+      /* wygląd elementów - li - w drugiej części rozwijanej */
+      #menu > li > ul > li > ol > li {
+        background-color:#CCC;
+      }
+
+      /* wygląd elementów - a - w drugiej części rozwijanej */
+      #menu > li > ul > li > ol > li > a {
+		  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-variant: small-caps;
+
+        border-top:1px solid #FFF;
+        border-left:1px solid #FFF;
+      }
+
+      /* wygląd elementu - a - w drugiej części rozwijanej, po najechaniu kursorem myszki */
+      #menu > li > ul > li > ol > li > a:hover {
+		  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-variant: small-caps;
+
+        color:#09C;
+      }
+
+      /* ------------------------WSPÓLNE----------------------- */
+
+      /* zaokrąglone rogi wszystkich elementów - li - oraz - a */
+      #menu li, ol a {
+		  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-variant: small-caps;
+
+        border-radius:6px;
+      }
+
+      /* strzałka w prawo */
+      #menu .dol {
+        background-image:url('http://webkod.pl/images/down.png');
+        background-repeat:no-repeat;
+        background-position:98% center;
+      }
+
+      /* strzałka w dół */
+      #menu .prawo {
+        background-image:url('http://webkod.pl/images/right.png');
+        background-repeat:no-repeat;
+        background-position:98% center;
+      }
+
+#TRESC {
+	width: 100%;
+	min-height: 670px; 
+	float: left;
+	overflow: hidden;
+	background-color: RGB(221,221,221);
+
+}
+
+#STOPKA {
+	clear: both;
+	width: 100%;
+	background-color: #F70808;
+	
+}
+
+
+iframe {
+	width:100%;
+	height:670px;
+	background-color: RGB(221,221,221);	
+
+}
+
+
+img {
+	margin:5px;
+
+}
+
+input, select {
+	border: 2px solid red;
+  	border-radius: 25px;
+}
+
+
+
+
